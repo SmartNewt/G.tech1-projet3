@@ -1,0 +1,35 @@
+:root {
+  --gold: rgb(218, 142, 20);
+  --lightgold: rgb(251, 250, 80);
+  --darkgold: rgb(143, 89, 15);
+  --bloodred: rgb(107, 19, 15);
+  --stonegrey: rgb(123, 112, 92);
+  --darkgrey: rgb(56, 55, 50);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  line-height: 1.6;
+  background: var(--darkgrey);
+  font-family: sans-serif;
+}
+
+.card {
+  color: white;
+  background-image: url(img/cadre.png);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 53ch;
+}
+
+.card-content {
+  padding: 3em;
+}
