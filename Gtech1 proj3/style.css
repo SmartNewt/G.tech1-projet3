@@ -1,120 +1,60 @@
-:root {
-  --gold: rgb(218, 142, 20);
-  --lightgold: rgb(251, 250, 80);
-  --darkgold: rgb(143, 89, 15);
-  --bloodred: rgb(107, 19, 15);
-  --stonegrey: rgb(123, 112, 92);
-  --darkgrey: rgb(56, 55, 50);
+*{
+  margin: 0;
+  padding: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: content-box;
-}
-
-body {
-  height: 100%;
-  place-items: center;
-  line-height: 1.6;
-  background: var(--darkgrey);
+body{
+  background-image: url(../img/fondvert.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 100%;
   font-family: sans-serif;
 }
 
-.header{
-  background-image: url(img/headband.jpg);
-  width: max-width;
-  height: 930px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: max-height;
-  background-color: black;
+div, section,span, ul, li, a ,header{
+  box-sizing: border-box;
+}
+      /* css reset */
+header{
+    background-color: rgba(217, 217, 217, 0.1);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: var(--darkgold);
+#menu li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px
 }
 
-/* Navbar links */
-.topnav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 10%;
+#menu li a{
+  color: black;
   text-decoration: none;
+  font-size: 20px;
 }
 
-/* Links - change color on hover */
-.topnav a:hover {
-  background-color: var(--bloodred);
-  color: var(--darkgold);
-}
 
-.card{
+section{
+  width: 100%;
   float: left;
-  color: white;
-  background-image: url(img/cadre.png);
-  background-size: cover;
-  padding: 8rem 0 0;
-  max-width: 53ch;
-  overflow: hidden;
-  margin: 0 5%;
-  transition: transform 500ms ease;
+  height: 100vh;
 }
 
-.card:hover{
-  transform: scale(1.05);
+#Home{
+
 }
 
-.card-content {
-  padding: 3em;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0),
-    var(--stonegrey),
-    var(--darkgrey)
-    );
-  margin: 0 2em;
-  transform: translateY(60%);
-  transition: transform 500ms ease;
+#Official-Page{
 }
 
-.card:hover .card-content {
-  transform: translateY(0);
+#Gameplay{
+
 }
 
-.button {
-   cursor: pointer;
-   display: inline;
-   text-decoration: none;
-   color: var(--darkgold);
-   background-color: var(--gold);
-   padding: 0.5em 1.25em;
-   border-radius: 0.3rem
-}
+#Rules{
 
-.button:hover,
-.button:focus {
-  background-color: var(--lightgold);
-}
-
-.row::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 158ch) {
-  .card {
-    float: center;
-    margin: 0 15%;
-  }
-}
-
-@media screen and (max-width: 255ch) and (min-width: 158ch) {
-  .card {
-    float: center;
-    margin: 0 25%;
-  }
 }
